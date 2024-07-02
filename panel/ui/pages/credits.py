@@ -1,76 +1,73 @@
+from nicegui import ui
+
+text = """
 <p align="center">
-<img src="https://github.com/Chainski/Kematian-Stealer/assets/96607632/c555e7a7-dfef-4890-a3fe-325141171896", width="400", height="400">
+<img src="https://github.com/Chainski/Kematian-Stealer/assets/96607632/345004a3-756a-43a6-9a27-8f09884bdc3e", width="400", height="400">
 </p>
 
 <div align="center">
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/actions/workflows/build_builder.yml">
-  <img src="https://img.shields.io/github/actions/workflow/status/Somali-Devs/Kematian-Stealer/build_builder.yml?style=flat&label=builder-src&color=fa7202" alt="Builder Src"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/actions/workflows/build_backend.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/Somali-Devs/Kematian-Stealer/build_backend.yml?style=flat&label=kematian-src&color=fa7202" alt="Kematian Src">
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/actions/workflows/build_builder.yml">
+  <img src="https://img.shields.io/github/actions/workflow/status/ChildrenOfYahweh/Kematian-Stealer/build_builder.yml?style=flat&label=builder-src&color=fa7202" alt="Builder Src"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/actions/workflows/build_backend.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/ChildrenOfYahweh/Kematian-Stealer/build_backend.yml?style=flat&label=kematian-src&color=fa7202" alt="Kematian Src">
   </a>
   <br>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer">
-    <img src="https://img.shields.io/github/languages/top/Somali-Devs/Kematian-Stealer?color=fa7202" alt="Top Language"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/stargazers">
-    <img src="https://img.shields.io/github/stars/Somali-Devs/Kematian-Stealer?style=flat&color=fa7202" alt="Stars"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/forks">
-    <img src="https://img.shields.io/github/forks/Somali-Devs/Kematian-Stealer?style=flat&color=fa7202" alt="Forks"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/issues">
-    <img src="https://img.shields.io/github/issues/Somali-Devs/Kematian-Stealer?style=flat&color=fa7202" alt="Issues"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/commits">
-    <img src="https://img.shields.io/github/commit-activity/m/Somali-Devs/Kematian-Stealer?color=fa7202" alt="Commit Activity"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/tree/main/frontend-src">
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer">
+    <img src="https://img.shields.io/github/languages/top/ChildrenOfYahweh/Kematian-Stealer?color=fa7202" alt="Top Language"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/stargazers">
+    <img src="https://img.shields.io/github/stars/ChildrenOfYahweh/Kematian-Stealer?style=flat&color=fa7202" alt="Stars"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/forks">
+    <img src="https://img.shields.io/github/forks/ChildrenOfYahweh/Kematian-Stealer?style=flat&color=fa7202" alt="Forks"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/issues">
+    <img src="https://img.shields.io/github/issues/ChildrenOfYahweh/Kematian-Stealer?style=flat&color=fa7202" alt="Issues"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/commits">
+    <img src="https://img.shields.io/github/commit-activity/m/ChildrenOfYahweh/Kematian-Stealer?color=fa7202" alt="Commit Activity"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/tree/main/frontend-src">
     <img src="https://img.shields.io/badge/Powershell-v3.0-fa7202" alt="Powershell v3.0"></a>
   <br>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer?tab=MIT-1-ov-file">
-    <img src="https://img.shields.io/github/license/Somali-Devs/Kematian-Stealer?color=fa7202" alt="License"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Somali-Devs/Kematian-Stealer?color=fa7202" alt="Contributors"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSomali-Devs%2FKematian-Stealer&count_bg=%23FA7202&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false" alt="Views"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer">
-    <img src="https://img.shields.io/github/repo-size/Somali-Devs/Kematian-Stealer?color=fa7202" alt="Repo Size"></a>
-  <a href="https://github.com/Somali-Devs/Kematian-Stealer">
-    <img src="https://img.shields.io/github/downloads/Somali-Devs/Kematian-Stealer/total?color=fa7202" alt="Total Downloads"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer?tab=MIT-1-ov-file">
+    <img src="https://img.shields.io/github/license/ChildrenOfYahweh/Kematian-Stealer?color=fa7202" alt="License"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/ChildrenOfYahweh/Kematian-Stealer?color=fa7202" alt="Contributors"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FChildrenOfYahweh%2FKematian-Stealer&count_bg=%23FA7202&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false" alt="Views"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer">
+    <img src="https://img.shields.io/github/repo-size/ChildrenOfYahweh/Kematian-Stealer?color=fa7202" alt="Repo Size"></a>
+  <a href="https://github.com/ChildrenOfYahweh/Kematian-Stealer">
+    <img src="https://img.shields.io/github/downloads/ChildrenOfYahweh/Kematian-Stealer/total?color=fa7202" alt="Total Downloads"></a>
 </div>
 
 
 <h1 align="center">Kematian Stealer</h1>
 
 # About The Project
-Kematian Stealer is a [PowerShell-based](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-5.1) tool designed to effortlessly infiltrate and exfiltrate data from Windows systems. All information collected is transmitted via TCP to your C2 server, where everything is decrypted. It functions seamlessly across any `x64bit` system, from `Windows 8 x64 to Windows 11 x64`, ensuring compatibility with the latest updates. With Kematian Stealer, you can retrieve `seed phrases, session files, passwords, application data, Discord tokens` and more.
+Kematian Stealer is a [PowerShell-based](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-5.1) tool designed to effortlessly infiltrate and exfiltrate data from Windows systems. All information collected is sent using [Discord webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks). It functions seamlessly across any `x64bit` system, from `Windows 8 x64 to Windows 11 x64`, ensuring compatibility with the latest updates. With Kematian Stealer, you can retrieve `seed phrases, session files, passwords, application data, Discord tokens` and more.
 
 This tool is particularly advantageous for accessing application and file data without restrictions, while evading conventional security measures such as `firewalls` and `antivirus` software, thanks to its `fileless capabilities`, which set it apart from other stealers. Upon execution, Kematian Stealer creates a `mutex` on the system and designates the process as `critical` before initiating data exfiltration, ensuring smooth and uninterrupted transmission of data.
 
-Moreover, the tool has robust `persistence mechanisms` to remain active on the machine after reboot. Additionally, its user-friendly web-based `GUI builder` simplifies the process of creating payloads, enhancing its accessibility and usability.
+Moreover, the tool has robust `persistence mechanisms` to remain active on the machine after reboot. Additionally, its user-friendly `GUI builder` simplifies the process of creating payloads, enhancing its accessibility and usability.
 <br>
 
 # Usage
-- Download [Builder](https://github.com/Somali-Devs/Kematian-Stealer/releases/download/AutoBuild/main.exe) from the releases.
-- The builder will automatically generate your `private key` and `certificate` at first run, you can find them here `$env:appdata\Kematian-Stealer`
-- After opening the builder, it will also start a local server which will run on `https://127.0.0.1:8080` by default.
-- Open your web browser and go to `https://127.0.0.1:8080/builder`
-- Input your C2 server in the `TCP TUNNEL URL:PORT` section
-- Next, activate the checkboxes for the features you want to include in the stub.
-- Finally hit build and the output stub will be placed in the same folder with the builder
-- Your logs will be saved here : `$env:appdata\Kematian-Stealer\logs`
-- A more detailed guide can be found here : https://devs.sped.lol/kematian-stealer
+- Create a Webhook on your [Discord Server](https://discord.com), it's advisable to create a new server for this purpose.
+- After creating a server go to `Edit channel` > `Integrations` > `Webhooks` > `Create Webhook`
+- Copy the `Webhook URL`
+- Download [main.ps1](https://github.com/ChildrenOfYahweh/Kematian-Stealer/raw/main/frontend-src/main.ps1) 
+- Open `main.ps1` and replace `YOUR_WEBHOOK_HERE` in line `1` with your webhook or use the [builder](https://github.com/ChildrenOfYahweh/Kematian-Stealer/releases/tag/Builder).
+- Additionally, set `$true` for the variables you wish to activate. Conversely, utilize `$false` to deactivate them, as shown in `configurations` below.
  
  > [!NOTE]   
  > **THE DEBUG OPTION IS FOR TESTING PURPOSES ONLY**
 
 ### Configurations
 ```ps1
-$c2_server = "YOUR_URL_HERE_SERVER" 
+$webhook = "YOUR_WEBHOOK_HERE" 
 $debug = $false
-$blockhostsfile = $false
-$criticalprocess = $false
+$blockhostsfile = $true
+$criticalprocess = $true
 $melt = $false
 $fakeerror = $false
-$persistence = $false
-$write_disk_only = $false
-$vm_protect = $false
-$encryption_key = "YOUR_ENC_KEY_HERE"
+$persistence = $true
 ```
 
 # Requirements
@@ -81,16 +78,21 @@ $encryption_key = "YOUR_ENC_KEY_HERE"
 
 # Obfuscation 
 - [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation) for `.ps1` files
-- [Somalifuscator](https://github.com/KDot227/SomalifuscatorV2) for `.bat` files 
+- [Somalifuscator](https://github.com/kdot227/somalifuscator) for `.bat` files 
 
 # Screenshots
   ## 🔨 Builder
-> ![builder](https://github.com/Chainski/Kematian-Stealer/assets/96607632/d33f2f68-4ac9-48cf-93ed-152c2de806d7)
+> ![builder](https://github.com/Chainski/Kematian-Stealer/assets/96607632/a282e7db-6357-483b-b33e-e122007c82f5)
 
    ### Builder Features
  - [x] 🔸 Obfuscation of `BAT` and `PS1` files
  - [x] 🔩 Compilation of Exe Files 
  - [x] 💉 Pump/Inject the output exe file with `zero-filled` bytes 
+
+ ## 🔷 Webhook Data
+> ![screenshot](https://github.com/Chainski/Kematian-Stealer/assets/96607632/964a67e6-ebf1-497c-a3ea-4efcdb24893b)
+
+> ![webhook](https://github.com/Chainski/Kematian-Stealer/assets/96607632/ae6cc514-9612-4c44-9afb-c110ee270194)
 
 #  Features
 - [x] GUI Builder
@@ -129,14 +131,11 @@ $encryption_key = "YOUR_ENC_KEY_HERE"
   - [OpenVPN](https://openvpn.net/client)
   - [x] Email Clients
   - [Thunderbird](https://www.thunderbird.net)
-  - [Mailbird](https://www.getmailbird.com) 
   - [x] FTP Clients
   - [FileZilla](https://filezilla-project.org)
   - [WinSCP](https://winscp.net/eng/index.php)
   - [x] Crypto Wallets
-  - Collects from 10+ desktop wallets and 20+ browser extensions.
-  - [x] Password Managers
-  - Collects from 9 major password extensions 
+  - Armory | Atomic | Bitcoin | Bytecoin | Coinomi | Dash | Electrum | Ethereum | Exodus | Guarda | Jaxx | Litecoin | Monero | Zephyr
 - [x] Browsers `Gecko Browsers` and `Chromium Browsers`
   - 🔑 Passwords
   - 🍪 Cookies
@@ -152,13 +151,13 @@ $encryption_key = "YOUR_ENC_KEY_HERE"
 - [x] Self-Destructs After Execution (optional)
 
 ### Telegram Session Stealer Usage :
-After the exfiltrated data is uploaded to your C2 server, download the zip file and extract it on your PC, inside that folder there will also be another subfolder `Messaging Sessions` , inside this subfolder you will find the `Telegram` folder.
+After the exfiltrated data is uploaded to your discord webhook, download the zip file and extract it on your PC, inside that folder there will also be another subfolder `Messaging Sessions` , inside this subfolder you will find the `Telegram` folder.
 Now, copy the `tdata` folder from `Telegram` folder and paste it in the directory below:
 ```bat
 %userprofile%\AppData\Roaming\Telegram Desktop
 ```
 Before pasting the tdata folder, ensure that you have deleted or backup the existing tdata folder on your PC.
-![telegram](https://github.com/Chainski/Kematian-Stealer/assets/96607632/6cdd0048-b414-484e-8d32-7fe6fc531b4c)
+![telegram](https://github.com/Chainski/Kematian-Stealer/assets/96607632/488242f5-bcc2-4388-8f40-f4e88d98a4ba)
 
  > [!NOTE]   
  > ***The other session stealers can be utilized by applying the technique above***
@@ -201,13 +200,13 @@ Cleanup
 ```
 
 # Need Help?
-- [Join our discord server](https://discord.gg/Zb9VG8NFBq)
+- [Join our discord server](https://discord.com/invite/WJCNUpxnrE)
 
 # Bug Reports and Suggestions
-Found a bug? Have an idea? Let me know [here](https://github.com/Somali-Devs/Kematian-Stealer/issues), Please provide a detailed explanation of the expected behavior, actual behavior, and steps to reproduce, or what you want to see and how it could be done. You can be a small part of this project!
+Found a bug? Have an idea? Let me know [here](https://github.com/KDot227/Kematian-Stealer/issues), Please provide a detailed explanation of the expected behavior, actual behavior, and steps to reproduce, or what you want to see and how it could be done. You can be a small part of this project!
 
 # License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Somali-Devs/Kematian-Stealer/blob/main/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/kdot227/Kematian-Stealer/blob/main/LICENSE) file for details
 
 # Disclaimer
 I, the creator, am not responsible for any actions, and or damages, caused by this software.
@@ -219,7 +218,20 @@ By using this software, you automatically agree to the above.
 - https://github.com/KDot227
 - https://github.com/Chainski
 - https://github.com/EvilBytecode
-- [ebthit](https://t.me/ebthit)
-- [Smug246](https://github.com/Smug246)
+- [Credit](https://t.me/ebthit)
 
 <p align="center"><a href=#top>Back to Top</a></p>
+
+"""
+
+
+def credits_page() -> None:
+    """Main page for the stealer. Very simple."""
+    text_frames = [
+        "https://github.com/KDot227\n"
+        "https://github.com/Chainski\n"
+        "https://github.com/EvilBytecode\n"
+    ]
+
+    for frame in text_frames:
+        ui.link(frame)
